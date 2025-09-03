@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rincón del Sabor</title>
+  <style>
+    /* Estilos globales */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFF9FB;
+      color: #333;
+      display: flex;
+      flex-direction: row;
+    }
+
+    /* Menú lateral */
+    nav {
+      width: 250px;
+      background-color: #FFDDEE;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    nav a {
+      display: block;
+      padding: 12px;
+      margin: 8px 0;
+      background-color: #FFCCE0;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #FFB3CC;
+    }
+
+    /* Contenedor principal */
+    .main-content {
+      margin-left: 270px;
+      padding: 20px;
+      width: 100%;
+    }
+
+    /* Estilos del título */
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      color: #FF1744;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    header p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Estilos de la imagen */
+    .img-container {
+      width: 85%;
+      max-width: 600px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .img-container img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .img-container img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú lateral -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="recetas.html">Recetas</a>
+    <a href="acerca.html">Acerca de</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="main-content">
+    <header>
+      <h1>Rincón del Sabor</h1>
+      <p>Explora, cocina y disfruta los mejores sabores</p>
+    </header>
+
+    <!-- Imagen con efecto hover -->
+    <div class="img-container">
+      <img src="restaurant.jpg" alt="Interior restaurante elegante">
+    </div>
+
+    <section>
+      <h2>Bienvenidos a nuestro sitio</h2>
+      <p>En Rincón del Sabor, te invitamos a descubrir una experiencia gastronómica única. Desde platos tradicionales hasta innovaciones modernas, cada receta está pensada para deleitar tu paladar.</p>
+    </section>
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rincón del Sabor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F4E1D2;
+      color: #4E3629;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      width: 250px;
+      background-color: #6F4F37;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+      position: fixed;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      display: block;
+      padding: 12px;
+      margin: 8px 0;
+      background-color: #8D6E63;
+      color: #FFF;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #5D4037;
+    }
+
+    .main-content {
+      margin-left: 270px;
+      padding: 20px;
+      width: 100%;
+      flex: 1;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      color: #4E3629;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 span {
+      color: #8D6E63;
+    }
+
+    .img-container {
+      width: 85%;
+      max-width: 600px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .img-container img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .img-container img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      nav {
+        width: 100%;
+        position: relative;
+        height: auto;
+      }
+
+      .main-content {
+        margin-left: 0;
+      }
+    }
+
+    footer {
+      text-align: center;
+      background-color: #6F4F37;
+      padding: 20px;
+      color: white;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú lateral -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="recetas.html">Recetas</a>
+    <a href="acerca.html">Acerca de</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="formulario.html">Formulario</a>
+    <a href="a1.pdf" download>Descargar PDF</a> <!-- Enlace de descarga -->
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="main-content">
+    <header>
+      <h1>Rincón del Sabor <span>¡Tu cafetería preferida!</span></h1>
+    </header>
+
+    <div class="img-container">
+      <img src="restaurant.jpg" alt="Interior de la cafetería Rincón del Sabor">
+    </div>
+
+    <section>
+      <h2>Bienvenidos a Rincón del Sabor</h2>
+      <p>En nuestro restaurante, el café es más que una bebida; es una experiencia. Ven a disfrutar de un ambiente acogedor, una carta variada y un servicio excepcional. Te esperamos con los brazos abiertos para ofrecerte lo mejor de nuestra cocina.</p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rincón del Sabor - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>

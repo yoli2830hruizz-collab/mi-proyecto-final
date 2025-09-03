@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rincón del Sabor</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #FFF9FB; /* Rosa pastel suave */
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #FFDDEE; /* Rosa pastel claro */
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropbtn {
+      background-color: #FFCCE0; /* Rosa pastel medio */
+      color: #333;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .dropbtn:hover {
+      background-color: #FFB3CC; /* Rosa pastel oscuro */
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #FFF1F6; /* Rosa pastel muy suave */
+      min-width: 180px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      border-radius: 5px;
+      z-index: 1;
+      margin-top: 5px;
+    }
+    .dropdown-content a {
+      color: #555;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 15px;
+      transition: background-color 0.2s;
+    }
+    .dropdown-content a:hover {
+      background-color: #FFCCE0;
+      color: #222;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Menú</button>
+      <div class="dropdown-content">
+        <a href="index.html">Inicio</a>
+        <a href="recetas.html">Recetas</a>
+        <a href="acerca.html">Acerca de</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Resto del contenido de la página -->
+</body>
+</html>
+

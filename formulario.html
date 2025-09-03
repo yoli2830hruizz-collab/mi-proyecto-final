@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Opinión - Restaurante</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Estilo general de la página */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #F5F5F5;
+      color: #3E2C1C;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('https://images.unsplash.com/photo-1585826185272-b28a6f8e3b40');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Contenedor del formulario */
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 3rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 650px;
+      backdrop-filter: blur(5px);
+    }
+
+    /* Título del formulario */
+    h2 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      color: #6F4F37;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+      font-size: 1.2rem;
+      color: #3E2C1C;
+      font-weight: 500;
+    }
+
+    input[type="email"], textarea, select {
+      width: 100%;
+      padding: 0.8rem;
+      border: 2px solid #C5A38D;
+      border-radius: 10px;
+      background-color: #F9F6F2;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 150px;
+    }
+
+    button[type="submit"], .back-button, .home-button {
+      background-color: #6F4F37;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 12px;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      width: auto;
+      margin-top: 1rem;
+    }
+
+    button[type="submit"]:hover, .back-button:hover, .home-button:hover {
+      background-color: #4E3629;
+    }
+
+    /* Estilo para los botones de regresar y menú principal */
+    .back-button, .home-button {
+      display: inline-block;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    /* Efecto de enfoque en los campos */
+    input[type="email"]:focus, textarea:focus, select:focus {
+      border-color: #6F4F37;
+      outline: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Califica el Restaurante</h2>
+    <form action="https://formspree.io/f/mwpqdrwn" method="POST">
+      
+      <!-- Pregunta sobre el correo -->
+      <label for="email">Tu correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Pregunta sobre la calificación -->
+      <label for="rating">¿Cómo calificarías el restaurante?</label>
+      <select id="rating" name="rating" required>
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="1">1 Estrella</option>
+        <option value="2">2 Estrellas</option>
+        <option value="3">3 Estrellas</option>
+        <option value="4">4 Estrellas</option>
+        <option value="5">5 Estrellas</option>
+      </select>
+
+      <!-- Pregunta sobre la calidad de la comida -->
+      <label for="food_quality">¿Cómo calificarías la calidad de la comida?</label>
+      <select id="food_quality" name="food_quality" required>
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="1">Muy mala</option>
+        <option value="2">Mala</option>
+        <option value="3">Regular</option>
+        <option value="4">Buena</option>
+        <option value="5">Excelente</option>
+      </select>
+
+      <!-- Pregunta sobre la atención del personal -->
+      <label for="service_quality">¿Cómo calificarías la atención del personal?</label>
+      <select id="service_quality" name="service_quality" required>
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="1">Muy mala</option>
+        <option value="2">Mala</option>
+        <option value="3">Regular</option>
+        <option value="4">Buena</option>
+        <option value="5">Excelente</option>
+      </select>
+
+      <!-- Pregunta sobre el ambiente -->
+      <label for="atmosphere">¿Cómo calificarías el ambiente del restaurante?</label>
+      <select id="atmosphere" name="atmosphere" required>
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="1">Muy mala</option>
+        <option value="2">Mala</option>
+        <option value="3">Regular</option>
+        <option value="4">Buena</option>
+        <option value="5">Excelente</option>
+      </select>
+
+      <!-- Pregunta sobre si recomendarían el restaurante -->
+      <label for="recommend">¿Recomendarías este restaurante?</label>
+      <select id="recommend" name="recommend" required>
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="yes">Sí</option>
+        <option value="no">No</option>
+      </select>
+
+      <!-- Pregunta sobre la experiencia general -->
+      <label for="message">¿Qué te gustó o no te gustó del restaurante?</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <!-- Botón de regresar -->
+      <a href="javascript:history.back()" class="back-button">Regresar</a>
+
+      <!-- Botón de ir a la página principal (inicio.html) -->
+      <a href="inicio.html" class="home-button">Ir a la Página Principal</a>
+
+      <!-- Botón de envío -->
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>
