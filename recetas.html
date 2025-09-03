@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetas | Rincón del Sabor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #FFF8F0;
+      color: #4E3629;
+    }
+
+    header {
+      background-color: #6F4F37;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .recipe-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .recipe-content {
+      padding: 20px;
+    }
+
+    .recipe-content h2 {
+      font-size: 24px;
+      margin: 0 0 10px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .recipe-content p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #6F4F37;
+      color: white;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Recetas Caseras</h1>
+    <p>Sabores únicos que puedes preparar en casa</p>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="container">
+    <div class="recipe-grid">
+
+      <!-- Receta 1 -->
+      <div class="recipe-card">
+        <img src=pastel.jpg alt="Café con pastel">
+        <div class="recipe-content">
+          <h2>Pastel de Café y Nuez</h2>
+          <p>Un pastel suave y aromático, con notas de café tostado y trozos crujientes de nuez. Ideal para acompañar una tarde de charla.</p>
+        </div>
+      </div>
+
+      <!-- Receta 2 -->
+      <div class="recipe-card">
+        <img src=ensalada.jpg alt="Ensalada fresca">
+        <div class="recipe-content">
+          <h2>Ensalada Mediterránea</h2>
+          <p>Una mezcla fresca de vegetales, aceitunas negras, queso feta y aderezo de limón con hierbas. Perfecta para los días soleados.</p>
+        </div>
+      </div>
+
+      <!-- Receta 3 -->
+      <div class="recipe-card">
+        <img src=pollo.jpg alt="Sándwich gourmet">
+        <div class="recipe-content">
+          <h2>Sándwich de Pollo y Pesto</h2>
+          <p>Pan artesanal relleno de pechuga de pollo a la parrilla, pesto casero y rodajas de tomate. Sencillo, nutritivo y delicioso.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Rincón del Sabor - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
